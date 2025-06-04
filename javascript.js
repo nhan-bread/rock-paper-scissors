@@ -3,15 +3,15 @@ console.log("Hello World")
 let randomNumber = Math.floor(Math.random() * 3) + 1;
 
 function getComputerChoice() {
-    let computerChoice;
+    let randomChoice;
     if (randomNumber === 1) {
-        computerChoice = "rock";
+        randomChoice = "rock";
     } else if (randomNumber === 2) {
-        computerChoice = "paper";
+        randomChoice = "paper";
     } else {
-        computerChoice = "scissors";
+        randomChoice = "scissors";
     }
-    return computerChoice;
+    return randomChoice;
 }
 console.log(getComputerChoice());
 
