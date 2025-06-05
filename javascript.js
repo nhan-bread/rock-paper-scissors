@@ -13,18 +13,18 @@ function getComputerChoice() {
     }
     return randomChoice;
 }
-console.log(getComputerChoice());
+//console.log(getComputerChoice());
 
 function getHumanChoice() {
     let playerChoice = window.prompt("What's your choice: rock, paper, or scissors?");
     return playerChoice.toLowerCase();
 }
-console.log(getHumanChoice());
+//console.log(getHumanChoice());
 
 let humanScore = 0;
 let computerScore = 0;
-console.log(humanScore);
-console.log(computerScore);
+//console.log(humanScore);
+//console.log(computerScore);
 
 // function playRound(humanChoice,computerChoice) {
 //    if (((humanChoice, computerChoice) === ("rock","paper"))
@@ -40,7 +40,7 @@ console.log(computerScore);
 //        console.log(`You win! ${humanChoice} beats ${computerChoice}.`)
 //    }
 //    else if (humanChoice === computerChoice) {
-//        console.log("It's a tie!")
+//        console.log(`You both chose ${humanChoice}, it's a tie!`);
 //    }
 //}
 
@@ -65,7 +65,7 @@ function playRound(humanChoice, computerChoice) {
     }
     else if (humanChoice === computerChoice) {
         //console.log(computerChoice);
-        console.log("It's a tie!");
+        console.log(`You both chose ${computerChoice}, it's a tie!`);
     }
 }
 
