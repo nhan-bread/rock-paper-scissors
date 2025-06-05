@@ -1,5 +1,3 @@
-console.log("Hello World")
-
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3) + 1;
     let randomChoice;
@@ -45,15 +43,6 @@ function playGame() {
         console.log(humanScore);
         console.log(computerScore);
     }
-
-//    const humanSelection = getHumanChoice();
-//    const computerSelection = getComputerChoice();
-
-//    playRound(humanSelection, computerSelection);
-//    playRound(humanSelection, computerSelection);
-//    playRound(humanSelection, computerSelection);
-//    playRound(humanSelection, computerSelection);
-//    playRound(humanSelection, computerSelection);
 
       playRound(getHumanChoice(), getComputerChoice());
       playRound(getHumanChoice(), getComputerChoice());
