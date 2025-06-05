@@ -40,20 +40,27 @@ function playGame() {
             humanScore++;
             console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
         }
-        else if (humanChoice === computerChoice) {
+        else {
             console.log(`You both chose ${computerChoice}, it's a tie!`);
         }
         console.log(humanScore);
         console.log(computerScore);
     }
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
 
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
+//    const humanSelection = getHumanChoice();
+//    const computerSelection = getComputerChoice();
+
+//    playRound(humanSelection, computerSelection);
+//    playRound(humanSelection, computerSelection);
+//    playRound(humanSelection, computerSelection);
+//    playRound(humanSelection, computerSelection);
+//    playRound(humanSelection, computerSelection);
+
+      playRound(getHumanChoice(), getComputerChoice());
+      playRound(getHumanChoice(), getComputerChoice());
+      playRound(getHumanChoice(), getComputerChoice());
+      playRound(getHumanChoice(), getComputerChoice());
+      playRound(getHumanChoice(), getComputerChoice());
 }
 
 playGame();
